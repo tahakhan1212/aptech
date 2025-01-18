@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+                *{
+                        box-sizing: border-box;
+                        margin: 0px;
+                        padding: 0px;
+                }
+                .card-container{
+                        width: 95%;
+                        /* justify-content: center; */
+                        margin: 1rem auto;
+                        grid-template-columns: repeat(4,1fr);
+                        display: grid;
+                        /* background-color: red; */
+                }
+                .card-content{
+                        margin: 0.5rem;
+                        height: 220px;
+                        width: 250px;
+                        padding: 1rem;
+                        /* background-color: green; */
+                        border: 2px solid black;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                }
+
+                h2{
+                        text-align: center;
+                }
+                p{
+                                padding-top: 1rem;
+                                font-size: 1.2rem;
+                }
+
+                .card-button{
+                        background-color: grey;
+                        font-size: 1.4rem;
+                        text-align: center;
+                }
+
+                input{
+                        display: grid;
+                        width: 50%;
+                        margin: 0 auto;
+                        font-size: 2rem;
+                        margin-top: 2rem;
+                }
+                .show{
+                        display: block;
+                }
+                .hide{
+                        display: hide;
+                }
+
+        </style>
+</head>
+<body>
+        <div class="searchbar">
+                <input type="text" name="" id="">
+        </div>
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="styles.css">
+            <title>Course Cards</title>
+        </head>
+        <body>
+                <div class="card-container">
+                    <!-- Card 1 -->
+                    <div class="card">
+                        <div class="card-content">
+                            <h2 class="card-title">Introduction to Programming</h2>
+                            <p class="card-description">Learn the fundamentals of programming using Python. Perfect for beginners!</p>
+                            <a href="#" class="card-button">Enroll Now</a>
+                        </div>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="card">
+                        <div class="card-content">
+                            <h2>Web Development Bootcamp</h2>
+                            <p>Master HTML, CSS, and JavaScript to build responsive websites from scratch.</p>
+                            <a href="#" class="card-button">Enroll Now</a>
+                        </div>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="card">
+                        <div class="card-content">
+                            <h2>Data Science with R</h2>
+                            <p>Dive into data analysis and visualization using R programming language.</p>
+                            <a href="#" class="card-button">Enroll Now</a>
+                        </div>
+                    </div>
+                    <!-- Card 4 -->
+                    <div class="card">
+                        <div class="card-content">
+                            <h2>Machine Learning A-Z</h2>
+                            <p>Understand machine learning algorithms and how to apply them in real-world scenarios.</p>
+                            <a href="#" class="card-button">Enroll Now</a>
+                        </div>
+                    </div>
+                    <!-- Card 5 -->
+                    <div class="card">
+                        <div class="card-content">
+                            <h2>Digital Marketing Essentials</h2>
+                            <p>Learn the key concepts of digital marketing, including SEO, PPC, and social media.</p>
+                            <a href="#" class="card-button">Enroll Now</a>
+                        </div>
+                    </div>
+                    <!-- Card 6 -->
+                    <div class="card">
+                        <div class="card-content">
+                            <h2>Graphic Design Fundamentals</h2>
+                            <p>Explore the principles of design and create stunning visuals using Adobe Illustrator.</p>
+                            <a href="#" class="card-button">Enroll Now</a>
+                        </div>
+                    </div>
+                    <!-- Card 7 -->
+                    <div class="card">
+                        <div class="card-content">
+                            <h2>Introduction to Cybersecurity</h2>
+                            <p>Learn about the basics of cybersecurity and how to protect systems from threats.</p>
+                            <a href="#" class="card-button">Enroll Now</a>
+                        </div>
+                    </div>
+                    <!-- Card 8 -->
+                    <div class="card">
+                        <div class="card-content">
+                            <h2>Mobile App Development</h2>
+                            <p>Build your first mobile app using Flutter and Dart. No prior experience needed!</p>
+                            <a href="#" class="card-button">Enroll Now</a>
+                        </div>
+                    </div>
+                    <!-- Card 9 -->
+                    <div class="card">
+                        <div class="card-content">
+                            <h2>Cloud Computing Basics</h2>
+                            <p>Understand cloud computing concepts and how to use AWS for your projects.</p>
+                            <a href="#" class="card-button">Enroll Now</a>
+                        </div>
+                    </div>
+                    <!-- Card 10 -->
+                    <div class="card">
+                        <div class="card-content">
+                            <h2>Project Management 101</h2>
+                            <p>Learn the fundamentals of project management and how to lead successful projects.</p>
+                            <a href="#" class="card-button">Enroll Now</a>
+                        </div>
+                    </div>
+                    <!-- Card 11 -->
+                    <div class="card">
+                        <div class="card-content">
+                            <h2>Introduction to SQL</h2>
+                            <p>Learn how to manage and query databases using SQL. Ideal for beginners!</p>
+                            <a href="#" class="card-button">Enroll Now</a>
+                        </div>
+                </div>
+                <!-- Card 12 -->
+                <div class="card">
+                        <div class="card-content">
+                                <h2>Python for Data Analysis</h2>
+                                <p>Use Python to analyze data and gain insights. Perfect for</p>
+                                <a href="#" class="card-button">Enroll Now</a>
+                </div>
+        </div>
+</div>
+
+
+<script>
+        let input = document.querySelector("input");
+        let card = document.querySelectorAll(".card-container");
+
+        card.forEach((cardItem) => {
+                input.addEventListener("input" , (e) => {
+                        let cardContent = cardItem.textContent.toLowerCase();
+                        let searchBarValue = e.target.value.toLowerCase();
+                        if(cardContent.includes(searchBarValue)) {
+                                cardItem.classList.add("show");
+                                cardItem.classList.remove("hide");
+                        } else {
+                                cardItem.classList.remove("show");
+                                cardItem.classList.add("hide");
+                        }
+                });
+        });
+</script>
+</body>
+</html>

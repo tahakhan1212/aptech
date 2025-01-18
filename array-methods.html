@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+        // ========making array======
+      let arr = [2, 3, 4, 5, 6, 7, 8, 9];
+      
+      //   =======filter methdod======
+
+      let newarr = arr.filter(function (val) {
+        return val < 5;
+      });
+
+    //   console.log(newarr);
+
+    //======== using foreach for remove the collection ======
+
+      newarr.forEach(all => {
+            console.log(all)
+      });
+
+    //   ========map method========
+
+      let test = newarr.map(function (val) {
+        return val + 1;
+      });
+
+    //   ======reduce method====== 
+
+    let red = arr.reduce(function (a,b){
+        // console.log(a,b);
+        return a+b;
+    })
+    console.log(red)
+
+    </script>
+  </body>
+</html>

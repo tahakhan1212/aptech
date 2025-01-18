@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        body{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 100vh;
+                text-align: center;
+                text-decoration: underline;
+        }
+        span{
+                font-size: 3rem;
+        }
+
+        .seconds{
+                color: red;
+        }
+    </style>
+  </head>
+  <body>
+    <span class="hours"></span>
+    <span>:</span>
+    <span class="minutes"></span>
+    <span>:</span>
+    <span class="seconds"></span>
+
+    <script>
+
+        let hour =document.querySelector(".hours")
+        let minute =document.querySelector(".minutes")
+        let second =document.querySelector(".seconds")
+
+      setInterval(() => {
+        let date = new Date();
+
+        let hr = date.getHours();
+        let min = date.getMinutes();
+        let sec = date.getSeconds();
+
+        hour.innerHTML = hr;
+        minute.innerHTML = min;
+        second.innerHTML = sec;
+
+      }, 1000);
+    </script>
+  </body>
+</html>

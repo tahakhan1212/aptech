@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // console.log("=====nested for loop=====")
+
+      // for(let i=1; i<=10; i++){
+      //         for (j=1; j<=10; j++)
+      //         console.log(`${i} X ${j} = ${i*j}`)
+      // }
+
+      //       console.log("======== Nested If Else Loop =======");
+
+      //       let age = 18;
+
+      //       if (age >= 18) {
+      //         if(age==18){
+      //                 console.log("bro your age is perfect")
+      //         }
+      //         console.log("hello world");
+      //       } else console.log("by world");
+
+      console.log("======== for of loop =======");
+
+      let data = [
+        {
+          name: "taha",
+          age: 17,
+          city: "New Mexico",
+        },
+
+        {
+          name: "sakuna",
+          age: 1700,
+          city: "tokyo",
+        },
+
+        {
+          name: "gojo",
+          age: 27,
+          city: "oklahoma",
+        },
+      ];
+
+      // for(let b=0; b<= data.length; b++)
+      // console.log(data[b].age);
+
+      // for(let a of data){
+      //         console.log(a.name)
+      // }
+
+      let nums = [22,23,4,456,45,2,12,765,43,]
+
+      // for(let p of nums){
+      //         console.log(p)
+      // }
+
+      console.log("=======for in loop=======");
+
+      // for(let d in data) {
+      //         console.log(data[d].city)
+      // }
+
+      console.log("======= map =======");
+
+        // for each pattern
+        let newnums = nums.forEach((value) => {
+                console.log(value - 200)
+        })
+
+    </script>
+  </body>
+</html>
